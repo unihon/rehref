@@ -1,0 +1,31 @@
+{
+   "manifest_version": 2,
+   "name": "rehref",
+   "version": "1.0.0",
+   "description": "rehref",
+   "browser_action": {
+      "default_icon": "icons/rehref.png",
+      "default_title": "Hello rehref"
+   },
+   "icons": {
+      "128": "icons/rehref.png",
+      "16": "icons/rehref.png",
+      "19": "icons/rehref.png",
+      "32": "icons/rehref.png",
+      "38": "icons/rehref.png",
+      "48": "icons/rehref.png"
+   },
+   "permissions": [
+      "storage",
+      "webRequest",
+      "webRequestBlocking",
+      "http://*/*",
+      "https://*/*"
+   ],
+   "options_page": "options.html",
+   "background": {
+      "scripts": [
+         "js/background.js"
+      ]
+   }
+}

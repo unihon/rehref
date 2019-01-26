@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title id="options-page-title">rehref options</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/options.css ">
+</head>
+
+<body>
+  <div class="alert" id="alert">
+    success!
+  </div>
+  <div class="container-fluid p-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8 bs">
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <img class="m-2 p-1 mx-auto d-block" src="./icons/rehref.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h1 class="display">setting</h1>
+            <small>• The redirect mode will redirect to the destination address when the conditions match.</small>
+            <br />
+            <small>• The keep mode will keep the data of GET request or keep all URL string except for the source url.</small>
+            <br />
+            <small>• The drop mode will drop the request and ingnore the destination address.</small>
+          </div>
+        </div>
+        <hr />
+        <!-- ori -->
+        <div class="row my-2" id="item-ori">
+          <!-- 0 -->
+          <div class="col-sm-12">
+            <form class="row" id="f-0">
+              <div class="mb-2 col-md-4">
+                <label for="source">source</label>
+                <input type="text" id="source" name="source" placeholder="https://old.com/...">
+              </div>
+              <div class="mb-2 col-md-4">
+                <label for="destination">destination</label>
+                <input type="text" id="destination" name="destination" placeholder="https://new.com/...">
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="mode">mode</label>
+                <select id="mode" name="mode">
+                  <option selected>redirect</option>
+                  <option>keep</option>
+                  <option>drop</option>
+                </select>
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="del">operate</label>
+                <button type="reset">clear</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- more -->
+        <div class="row my-2" id="item-more">
+          <!-- 1 -->
+          <div class="col-sm-12">
+            <form class="row" id="f-1">
+              <div class="mb-2 col-md-4">
+                <label for="source">source</label>
+                <input type="text" id="source" name="source" placeholder="https://old.com/...">
+              </div>
+              <div class="mb-2 col-md-4">
+                <label for="destination">destination</label>
+                <input type="text" id="destination" name="destination" placeholder="https://new.com/...">
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="mode">mode</label>
+                <select id="mode" name="mode">
+                  <option selected>redirect</option>
+                  <option>keep</option>
+                  <option>drop</option>
+                </select>
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="del">operate</label>
+                <button type="reset">clear</button>
+              </div>
+            </form>
+          </div>
+          <!-- 2 -->
+          <div class="col-sm-12">
+            <form class="row" id="f-2">
+              <div class="mb-2 col-md-4">
+                <label for="source">source</label>
+                <input type="text" id="source" name="source" placeholder="https://old.com/...">
+              </div>
+              <div class="mb-2 col-md-4">
+                <label for="destination">destination</label>
+                <input type="text" id="destination" name="destination" placeholder="https://new.com/...">
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="mode">mode</label>
+                <select id="mode" name="mode">
+                  <option selected>redirect</option>
+                  <option>keep</option>
+                  <option>drop</option>
+                </select>
+              </div>
+              <div class="mb-2 col-md-2">
+                <label for="del">operate</label>
+                <button type="reset">clear</button>
+              </div>
+            </form>
+          </div>
+          <!-- more end -->
+        </div>
+        <hr />
+        <div class="row mt-4 justify-content-center">
+          <div class="col-sm-6 col-md-2 mb-1">
+            <button type="button" id="more">more</button>
+          </div>
+          <div class="col-sm-6 col-md-2 mb-1">
+            <button type="button" id="save">save</button>
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+          <div class="col-sm-12 mb-1">
+            <footer><span>2019 - rehref - v1.0.0 - </span> <a href="https://unihon.github.io/about/">about</a></footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/options.js"></script>
+</body>
+
+</html>
